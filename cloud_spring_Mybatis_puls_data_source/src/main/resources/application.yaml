@@ -1,0 +1,29 @@
+spring:
+  autoconfigure:
+    exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure  # 为了某些版本的springboot  @SpringBootApplication(exclude= {DataSourceAutoConfiguration.class}) 无法生效
+
+  datasource:
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      datasource:
+        master:
+          username: root
+          password: Xbkj20190125
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://192.168.1.60:3306/test1?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+        slave_1:
+          username: root
+          password:  Xbkj20190125
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://192.168.1.60:3306/test2?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+
+mybatis:
+  config-location: classpath:mybatis-config:xml
+  configuration:
+    # resultMap返回null字段
+    map-underscore-to-camel-case: true
+    return-instance-for-empty-row: true
+    call-setters-on-nulls: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 1235

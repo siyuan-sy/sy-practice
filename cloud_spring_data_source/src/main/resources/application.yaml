@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    test1:
+      url: jdbc:mysql://192.168.1.60:3306/test1?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+      username: root
+      password:  Xbkj20190125
+      driver-class-name: com.mysql.jdbc.Driver
+      hikari:
+        minimum-idle: 5
+        idle-timeout: 180000
+        maximum-pool-size: 10
+        auto-commit: true
+        pool-name: HikariCP
+        max-lifetime: 1800000
+        connection-timeout: 30000
+        connection-test-query: SELECT 1
+    test2:
+      url: jdbc:mysql://192.168.1.60:3306/test2?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&failOverReadOnly=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+      username: root
+      password:  Xbkj20190125
+      driver-class-name: com.mysql.jdbc.Driver
+      hikari:
+        minimum-idle: 5
+        idle-timeout: 180000
+        maximum-pool-size: 10
+        auto-commit: true
+        pool-name: HikariCP
+        max-lifetime: 1800000
+        connection-timeout: 30000
+        connection-test-query: SELECT 1
+mybatis:
+  config-location: classpath:mybatis-config:xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 1234
