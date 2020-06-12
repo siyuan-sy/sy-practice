@@ -3,7 +3,6 @@ package com.sy.mybatis.mapper1;
 
 import com.sy.mybatis.entity.XbUsers;
 import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 

@@ -1,0 +1,26 @@
+
+server:
+  port: 1600
+
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true
+          enabled: true
+      routes:
+        # 认证中心
+        - id: cloud-swagger
+          uri: lb://cloud-swagger
+          predicates:
+            - Path=/swagger/**
+          filters:
+            - StripPrefix=1
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        file-extension: yaml
+

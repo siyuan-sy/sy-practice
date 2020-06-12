@@ -9,40 +9,45 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <!--<module>nacos_server</module>
-        <module>nacos_client</module>
-        <module>cloud_gateway</module>
-        <module>poi</module>
-        <module>sentinel</module>
-        <module>sentinel_client</module>
-        <module>test_Security</module>
-        <module>security_custom</module>
-        <module>rocketMq_demo</module>
-        <module>quartz_demo</module>
-        <module>elasticsearch_demo</module>
-        <module>common_demo</module>
-        <module>design_mode</module>
-        <module>cloud_file</module>
-        <module>cloud_reflectioon</module>-->
         <module>cloud_spring_data_source</module>
         <module>cloud_spring_Mybatis_puls_data_source</module>
+        <module>cloud_demo</module>
+        <module>cloud_common</module>
+        <module>cloud_swagger</module>
+        <module>cloud-gateway</module>
+        <module>cloud_oauth2</module>
     </modules>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.4.RELEASE</version>
+        <version>2.2.6.RELEASE</version>
+        <relativePath/>
     </parent>
 
     <properties>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+        <spring-cloud.version>Hoxton.SR4</spring-cloud.version>
         <lombok.version>1.18.6</lombok.version>
-        <spring-cloud-alibaba-dependencies.version>0.2.1.RELEASE</spring-cloud-alibaba-dependencies.version>
+        <spring-cloud-alibaba-dependencies>2.1.0.RELEASE</spring-cloud-alibaba-dependencies>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <!-- redis -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>2.2.6.RELEASE</version>
+            </dependency>
+            <!-- <dependency>
+                 <groupId>io.spring.platform</groupId>
+                 <artifactId>platform-bom</artifactId>
+                 <version>Brussels-SR4</version>
+                 <type>pom</type>
+                 <scope>import</scope>
+             </dependency>-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -51,9 +56,9 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.springframework.cloud</groupId>
+                <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${spring-cloud-alibaba-dependencies.version}</version>
+                <version>${spring-cloud-alibaba-dependencies}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

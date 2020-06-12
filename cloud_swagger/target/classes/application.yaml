@@ -1,0 +1,16 @@
+server:
+  port: 1601
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        file-extension: yaml
+  application:
+    name: cloud-swagger
+
+auth:
+  skip:
+    urls: >
+      /api/auth-server/v1/auth,
+      /api/auth-server/v1/wechat

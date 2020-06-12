@@ -2,44 +2,23 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud_file" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud_gateway" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud_reflectioon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_common/cloud_core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_common/cloud_log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_common/cloud_redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_common/cloud_security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_oauth2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_oauth2/src/main/resources/demojwt.jks" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/cloud_spring_Mybatis_puls_data_source" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_spring_Mybatis_puls_data_source/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud_spring_data_source" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/common_demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/design_mode" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/composite/Application.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/composite/College.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/decorator/Application.java" charset="UTF-16" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/decorator/Flavour.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/iterator/Client.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/iterator/College.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/iterator/ComputerCollege.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/pizzastore/newfile.cld" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/pizzastore/order/LDFactory.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/pizzastore/order/OrderPizza.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/pizzastore/order/PizzaStore.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/pizzastore/pizza/BJCheesePizza.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/pizzastore/pizza/BJPepperPizza.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/pizzastore/pizza/LDCheesePizza.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/pizzastore/pizza/LDPepperPizza.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/pizzastore/pizza/Pizza.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/prototype/deepclone/Client.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/prototype/deepclone/DeepCloneableTarget.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/design_mode/src/main/java/com/vit/prototype/deepclone/DeepProtoType.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/elasticsearch_demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/nacos_client" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/nacos_server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/poi" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/quartz_demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rocketMq_demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/security_custom" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sentinel" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sentinel_client" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/testLambda" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/test_Security" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zipkin_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_spring_data_source/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud_swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
