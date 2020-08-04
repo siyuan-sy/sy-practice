@@ -16,6 +16,8 @@
         <module>cloud_swagger</module>
         <module>cloud-gateway</module>
         <module>cloud_oauth2</module>
+        <module>cloud_excel</module>
+        <module>cloud_webflux</module>
     </modules>
 
 

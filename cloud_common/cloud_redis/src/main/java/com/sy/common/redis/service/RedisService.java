@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * @author ruoyi
  **/
 @SuppressWarnings(value = { "unchecked", "rawtypes" })
-@Component
+@Component("redisService")
 public class RedisService
 {
     @Autowired

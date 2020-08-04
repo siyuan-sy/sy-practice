@@ -3,9 +3,13 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://192.168.1.11:3306/sbop?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/sbop?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: root
+#  datasource:
+#    url: jdbc:mysql://192.168.1.60:3306/sbop?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+#    username: sunwin
+#    password: Sunwin@2019
     driver-class-name: com.mysql.cj.jdbc.Driver
     platform: mysql
     # 下面为连接池的补充设置，应用到上面所有数据源中

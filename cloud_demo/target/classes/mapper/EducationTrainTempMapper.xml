@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sy.mapper.EducationTrainTempMapper">
+
+    <resultMap type="com.sy.entity.EducationTrainTemp" id="EducationTrainTempMap">
+        <result property="id" column="ID" jdbcType="INTEGER"/>
+        <result property="name" column="NAME" jdbcType="VARCHAR"/>
+        <result property="idNo" column="ID_NO" jdbcType="VARCHAR"/>
+        <result property="orgId" column="ORG_ID" jdbcType="INTEGER"/>
+        <result property="areaId" column="AREA_ID" jdbcType="INTEGER"/>
+        <result property="batchId" column="BATCH_ID" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="tempinsert" resultType="com.sy.pojo.Temp">
+             call  splitString(${param1},${param2});
+--            select  splitstr(#{param1},#{param2})
+    </select>
+
+       <select id="tempList" resultType="com.sy.pojo.Temp">
+            select  *  from temp
+    </select>
+
+
+    
+    <!--查询单个-->
+    <select id="queryById" resultMap="EducationTrainTempMap">
+        select
+          ID, NAME, ID_NO, ORG_ID, AREA_ID, BATCH_ID
+        from sbop.education_train_temp
+        where ID = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="EducationTrainTempMap">
+        select
+          ID, NAME, ID_NO, ORG_ID, AREA_ID, BATCH_ID
+        from sbop.education_train_temp
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="EducationTrainTempMap">
+        select
+          ID, NAME, ID_NO, ORG_ID, AREA_ID, BATCH_ID
+        from sbop.education_train_temp
+        <where>
+            <if test="id != null">
+                and ID = #{id}
+            </if>
+            <if test="name != null and name != ''">
+                and NAME = #{name}
+            </if>
+            <if test="idNo != null and idNo != ''">
+                and ID_NO = #{idNo}
+            </if>
+            <if test="orgId != null">
+                and ORG_ID = #{orgId}
+            </if>
+            <if test="areaId != null">
+                and AREA_ID = #{areaId}
+            </if>
+            <if test="batchId != null and batchId != ''">
+                and BATCH_ID = #{batchId}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into sbop.education_train_temp(NAME, ID_NO, ORG_ID, AREA_ID, BATCH_ID)
+        values (#{name}, #{idNo}, #{orgId}, #{areaId}, #{batchId})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update sbop.education_train_temp
+        <set>
+            <if test="name != null and name != ''">
+                NAME = #{name},
+            </if>
+            <if test="idNo != null and idNo != ''">
+                ID_NO = #{idNo},
+            </if>
+            <if test="orgId != null">
+                ORG_ID = #{orgId},
+            </if>
+            <if test="areaId != null">
+                AREA_ID = #{areaId},
+            </if>
+            <if test="batchId != null and batchId != ''">
+                BATCH_ID = #{batchId},
+            </if>
+        </set>
+        where ID = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from sbop.education_train_temp where ID = #{id}
+    </delete>
+
+    
+    <insert id="batchInsert">
+        insert into sbop.education_train_temp(NAME, ID_NO,JOB,PHONE) values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.name},#{item.idNo},#{item.job},#{item.phone})
+        </foreach>
+    </insert>
+</mapper>

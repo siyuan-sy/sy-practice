@@ -14,11 +14,11 @@ import java.util.List;
  */
 public interface UserMapper extends BaseMapper<User> {
     @DS("master")
-    @Select("select name,age from user")
+    @Select("select name,age from test_user")
     List<User> selectByMobile1();
 
 
     @DS("slave_1")
-    @Select("select name,age from user")
+    @Select("select name,age from test_user")
     List<User> selectByMobile2();
 }

@@ -1,0 +1,10 @@
+server:
+  port: 1234
+spring:
+  redis:
+    # 服务器IP地址
+    host: 127.0.0.1
+    # 连接端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    password:

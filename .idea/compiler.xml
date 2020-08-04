@@ -22,14 +22,16 @@
         <module name="sentinel" />
         <module name="cloud_oauth2" />
         <module name="cloud_demo" />
+        <module name="nacos_server" />
         <module name="design_mode" />
         <module name="cloud_spring_data_source" />
         <module name="test_Security" />
         <module name="quartz_demo" />
         <module name="elasticsearch_demo" />
         <module name="cloud-gateway" />
+        <module name="cloud_webflux" />
         <module name="cloud_log" />
-        <module name="nacos_server" />
+        <module name="cloud_excel" />
         <module name="nacos_client" />
       </profile>
     </annotationProcessing>
@@ -68,6 +70,7 @@
       <module name="cloud-gateway" options="-parameters" />
       <module name="cloud_common" options="-parameters" />
       <module name="cloud_demo" options="-parameters" />
+      <module name="cloud_excel" options="-parameters" />
       <module name="cloud_file" options="-parameters" />
       <module name="cloud_gateway" options="-parameters" />
       <module name="cloud_log" options="-parameters" />
@@ -79,6 +82,7 @@
       <module name="cloud_spring_Mybatis_puls_data_source" options="-parameters" />
       <module name="cloud_spring_data_source" options="-parameters" />
       <module name="cloud_swagger" options="-parameters" />
+      <module name="cloud_webflux" options="-parameters" />
       <module name="common_demo" options="-parameters" />
       <module name="design_mode" options="-parameters" />
       <module name="elasticsearch_demo" options="-parameters" />
