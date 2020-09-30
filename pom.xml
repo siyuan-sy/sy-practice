@@ -18,6 +18,9 @@
         <module>cloud_oauth2</module>
         <module>cloud_excel</module>
         <module>cloud_webflux</module>
+        <module>generator</module>
+        <module>cloud_security_demo</module>
+        <module>cloud_quartz</module>
     </modules>
 
 
